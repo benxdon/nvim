@@ -6,3 +6,8 @@ vim.opt.smartindent = false
 vim.opt.relativenumber = false
 vim.opt.number = true
 vim.g.autoformat = false
+
+vim.diagnostic.config({
+  virtual_text = false,
+  float = { border = "rounded", source = true },
+})
