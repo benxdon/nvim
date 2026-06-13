@@ -17,3 +17,9 @@ map("n", "<leader>mp", function()
     end,
   })
 end, { desc = "Markdown to PDF (Pandoc/Typst)" })
+
+-- Keep cursor centered on half-page jumps and search hops
+map("n", "<C-d>", "<C-d>zz", { desc = "Half-page down (centered)" })
+map("n", "<C-u>", "<C-u>zz", { desc = "Half-page up (centered)" })
+map("n", "n", "nzzzv", { desc = "Next search (centered)" })
+map("n", "N", "Nzzzv", { desc = "Prev search (centered)" })
